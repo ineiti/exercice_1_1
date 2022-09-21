@@ -5,6 +5,8 @@
 
 #define TEST
 
+using namespace std;
+
 int main(int argc, char** argv) {
 #ifdef TEST
     doctest::Context ctx;
@@ -15,11 +17,11 @@ int main(int argc, char** argv) {
     return res;                   // propagate the result of the tests
 
 #else
-    std::cout << "  ///// \n +-----+ \n(| o o |)\n |  ^  | \n | '-' | \n +-----+" << std::endl;
-    std::string name;
-    std::cout << "Enter your name: ";
-    std::cin >> name;
-    std::cout << "your name is " << name << std::endl;
+    cout << "  ///// \n +-----+ \n(| o o |)\n |  ^  | \n | '-' | \n +-----+" << endl;
+    string name;
+    cout << "Enter your name: ";
+    cin >> name;
+    cout << "your name is " << name << endl;
     return 0;
 #endif
 }
